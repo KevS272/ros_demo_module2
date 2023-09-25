@@ -1,6 +1,6 @@
 # This is an auto generated Dockerfile for ros:ros-base
 # generated from docker_images_ros2/create_ros_image.Dockerfile.em
-FROM osrf/ros:humble-desktop-jammy
+FROM ros:humble-ros-base-jammy
 
 # install bootstrap tools
 RUN apt-get update && apt-get install --no-install-recommends -y \
