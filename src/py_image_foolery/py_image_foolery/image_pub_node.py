@@ -37,7 +37,6 @@ class ImagePublisher(Node):
         img_msg.height = image.shape[0]
         img_msg.width = image.shape[1]
         img_msg.encoding = "bgr8"
-        img_msg.step = 3 * image.shape[1]
         img_msg.data = image.tobytes()
         self.publisher_.publish(img_msg)
 
